@@ -99,3 +99,85 @@ console.log(typeof -4)
     console.log("Testando \nquebra de linha.")
 
     console.log("Espaçamento \tde tab.")
+
+  /* == Concatenação
+    ● Concatenação é o recurso que une dois ou mais 
+        textos;
+    ● O operador da concatenação é o +;
+    ● Exemplo: “Meu “ + “ texto “ + “ combinado”;
+    ● Agora o recurso pode não fazer tanto sentido, mas 
+        com variáveis teremos um melhor uso para ele;
+    ● Vamos ver na prática!*/ 
+    
+    // 6 - Concatenação
+    console.log( "Oi," + " tudo" + " bem?" )
+    console.log('Testando' + ' a concatenação.')
+
+    /* == Interpolação (Template Strings)
+    ● A interpolação é um recurso semelhante a 
+        concatenação;
+    ● Mas nos possibilita a escrever tudo na mesma 
+        string;
+    ● Esta deve ser escrita `entre crases`;
+    ● Podemos executar código JavaScript com ${ algum 
+        código };
+    ● Vamos ver na prática
+    
+    O símbolo ${} em JavaScript é usado para interpolar variáveis ​​em strings literais.
+    
+    Com o uso de ${}, podemos tornar essa tarefa mais simples e menos suscetível a erros.
+    
+    Aqui está um exemplo de como usar ${} em JavaScript:*/
+
+    const name = "Gustavo"
+    const age = 41 
+    console.log(`Meu nome é: ${name} e eu tenho ${age} anos.`)
+
+    console.log(`A soma de 2+2 é: ${2+2}`)
+
+    /* == Booleans
+    ● Os booleans possuem apenas dois valores: true ou 
+        false;
+    ● Qualquer comparação, utilizando os sinais >, <, ==, 
+        resulta em um booleano;
+    ● Mais a frente veremos que este tipo é importante 
+        para estruturas de condição e repetição;*/
+
+        // 8 - Booleans
+
+        console.log(typeof true) //boolean
+        console.log(typeof false) //boolean
+        console.log(5>2) //true
+        console.log(30>100) // false
+        console.log(5<6) // true
+
+       /* == Comparações
+    ● As comparações que podemos utilizar são:
+    ● Maior e menor: > e <;
+    ● Maior ou igual e menor ou igual: >= e <=; 
+    ● Igual: ==;
+    ● Diferente: !=;
+    ● Idêntico: ===;*/
+    
+    // 9 - Comparações
+    console.log(5 <= 5) // true
+    console.log(5 < 5) // false
+    console.log(10 == 10) // true
+    console.log(9 == 10) // false
+    console.log(9 != 10) // true
+
+        /* == Comparação de idêntico ==
+
+    ● Os operadores === e !== funcionam como == e !=;
+    ● Porém também levam em consideração o tipo do 
+    dado;
+    ● Estes operadores necessitam que o tipo e o dado 
+    sejam iguais/diferentes;
+    ● Devemos tentar ao máximo utilizar estes 
+    operadores;*/
+
+    // 10 - Idênticos
+    console.log(9 == "9") // true
+    console.log(9 === "9") // false 
+    console.log(9 !== "9") // true
+    console.log(9 != "9") // false
